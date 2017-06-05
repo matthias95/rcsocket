@@ -27,7 +27,7 @@ namespace RCSocket {
 	* @param socketID
 	*/
 	void RCSocketTransmitter::selectSocket(const int socketID){
-		if(socketID >= 5) 
+		if(socketID >= 5 || socketID < 0 ) 
 			return;
 		dataFrame[5 + socketID] = ZERO;
 	}
