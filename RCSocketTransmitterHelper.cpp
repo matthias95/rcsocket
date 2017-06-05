@@ -19,7 +19,7 @@ namespace RCSocket {
 	* setup gpio to control the transmitter
 	* @param pin raspberry pi GPIO pin connected to transmitter, pinout according to wiringPi
 	*/
-	void initTransmitter(int pin){
+	void initTransmitter(unsigned short pin){
 		wiringPiSetup();
 		pinMode(pin,OUTPUT);
 	}
