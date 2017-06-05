@@ -9,7 +9,14 @@
 
 #include "RCSocketTransmitter.hpp"
 
+/**
+timing used in the tranmitter protocoll, may depend on the brand of the sockets, for mine 380 microseconds works well
+*/
 constexpr int timing = 380;
+
+/**
+gpio pin the transmitter is attache to  
+*/
 constexpr int pin = 0; 
 
 int main(int argc, char **args){
@@ -22,6 +29,10 @@ int main(int argc, char **args){
 	const int socketId = std::stoi (args[2], nullptr, 10);
 	const int state = std::stoi (args[3], nullptr, 10);
 	RCSocket::RCSocketTransmitter socket(timing, pin, code);
+	
+	/**
+	repeat transmission 16 times to make it work more reliable
+	*/
 	for(int i = 0; i < 15; i++){
 		if(state)
 			socket.switchOn(socketId);
