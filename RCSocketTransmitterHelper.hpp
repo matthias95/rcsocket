@@ -16,7 +16,7 @@ namespace RCSocket {
 	* setup gpio to control the transmitter
 	* @param pin raspberry pi GPIO pin connected to transmitter, pinout according to wiringPi
 	*/
-	void initTransmitter(const int pin);
+	void initTransmitter(const unsigned short pin);
 	
 	/** 
 	* transmit data frame 
