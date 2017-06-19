@@ -1,8 +1,8 @@
 # rcsocket
 
-Library and sample application for controlling 433MHz remote controled sockets using raspberry pi. The transmitter is controled via bit banging depending on WiringPi for GPIO acces. The project might be easily ported to arduino because of the similarity between WiringPi and arduino interface for GPIO acces.  \
+Library and sample application for controlling 433MHz remote controlled sockets using raspberry pi. The transmitter is controlled via bit banging depending on WiringPi for GPIO access. The project might be easily ported to arduino because of the similarity between WiringPi and arduino interface for GPIO access.  \
 
-__***Every application build with this lib requeires super user permissions in order to acces GPIO ports***__
+__***Every application build with this lib requieres super user permissions in order to access GPIO ports***__
 
 # Dependencies
 - [WiringPi](http://wiringpi.com/download-and-install/)
@@ -24,7 +24,7 @@ Install sample application (must be executed as root): \
 
 # Usage:
 
-__***Every application build with this lib requeires super user permissions in order to acces GPIO ports***__
+__***Every application build with this lib requieres super user permissions in order to access GPIO ports***__
 
 For usage of the library see sample application [switchrcsocket.c](switchrcsocket.c). \
 \
